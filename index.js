@@ -40,4 +40,6 @@ async function invokeAction({ action, id, name, email, phone }) {
   }
 }
 
-invokeAction(argv);
+(async function () {
+  await invokeAction(argv);
+})();
